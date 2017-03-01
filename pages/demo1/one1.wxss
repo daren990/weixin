@@ -1,0 +1,50 @@
+/* pages/demo1/one1.wxss */
+page{
+    height: 100%;
+}
+.scrheight{
+    display: block;
+    width: 100%;
+    height: 93%;
+    margin-right: 20px;
+    background:#ebebeb;
+}
+.left-view{
+    float: left;
+}
+.right-view{
+    float: right;
+}
+.left-img{
+    margin-right: 6rpx;
+}
+.right-img{
+    margin-left: 6rpx;
+}
+.triangle{
+    margin-top: 42rpx;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}
+.left-Triangle{
+    border-right:  6px solid #fff;
+}
+.right-Triangle{
+    border-left: 6px solid #5bcd20;
+}
+.message{
+    margin-top: 24rpx;
+    border-radius: 6rpx;
+    font-size: 14px;
+    letter-spacing: 1px;
+    max-width: 80%;
+    padding: 10rpx;
+}
+.left-message{
+    background: #fff;
+}
+.right-message{
+    background: #5bcd20;
+}
