@@ -26,7 +26,7 @@ Page({
   //点击切换路径
   touchstart:function(){
     wx.navigateTo({
-      url: '../demo1/one1'
+      url: '../chat/messages'
     })
   }
 })

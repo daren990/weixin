@@ -1,0 +1,34 @@
+<scroll-view scroll-into-view="{{addTop}}" class="scrheight" scroll-y="true">
+        <view id="{{ i.mesId }}" wx:for="{{message}}" wx:for-item="i">
+                <view  wx:if="{{ i.text1 }}" class="clearfix">
+                    <image class="left-img left-view"  src="{{userInfo.avatarUrl}}"></image>
+                    <view class="left-Triangle triangle left-view"></view>
+                    <view class="left-message message left-view">
+                        <text>{{i.text1}}</text>
+                    </view>
+                </view>
+                <view  wx:if="{{ i.text2 }}" class="clearfix">
+                        <image class="right-img right-view"  src="{{userInfo.avatarUrl}}"></image>
+                        <view class="right-Triangle triangle right-view"></view>
+                        <view class="right-message message right-view">
+                            <text>{{i.text2}}</text>
+                        </view>
+                </view>
+        </view>
+  </scroll-view>
+  <view class="wa-row"> 
+        <view class="left-view">
+            <image class="imageStyle auido" src="/image/wifi.png"/>
+        </view>
+        <view class="left-view text-view">
+            <input value="{{ valueInput }}" maxlength="99" bindinput="addfocus" bindblur="blur" type="text" class="textStyle"/>
+        </view>
+        <view class="left-view add_biaoqing">
+            <image class="imageStyle" src="/image/emoji.png"></image>
+        </view>
+        <view class="right-view add_value">
+            <image wx:if="{{imageshow}}" class="imageStyle" src="/image/round_add.png"></image>
+            <button wx:if="{{btnshow}}" bindtap="submit" class="btn" type="primary">发送</button>
+        </view>
+  </view>
+  

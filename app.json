@@ -2,7 +2,7 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/demo1/one1",
+    "pages/chat/messages",
     "pages/demo2/one2"
   ],
   "window":{
