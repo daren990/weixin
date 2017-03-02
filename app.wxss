@@ -17,4 +17,5 @@
     width: 70rpx;
     height: 70rpx;
     margin-top: 16rpx;
+    background-size: cover;
 }

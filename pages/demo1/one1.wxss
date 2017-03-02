@@ -48,3 +48,57 @@ page{
 .right-message{
     background: #5bcd20;
 }
+.wa-row{
+    background:#f5f5f7;
+    overflow-x: hidden;
+    height:7%;
+    width: 100%;
+}
+.wa-row view{
+    height: 100%;
+}
+.imageStyle{
+    width: 50rpx;
+    height: 50rpx;
+    margin-top: 14rpx;
+}
+.auido{
+    margin-left: 20rpx;
+}
+.text-view{
+    width: 60%;
+    margin-left: 12rpx;
+}
+.textStyle{
+    border: 1rpx solid #ccc;
+    background:#fcfcfc;
+    border-radius:4px;
+    padding-left: 6px;
+    height:70%;
+    width: 100%;
+    line-height: 100%;
+    margin-top: 10rpx;
+    font-family:microsoft yahei;
+    font-size:14px;
+}
+.add_biaoqing{
+    margin-left: 18px;
+}
+.right-view{
+    height: 100%;
+}
+.add_value{
+    width: 130rpx;
+    height: 100%;
+    line-height: 100%;
+    text-align: center;
+}
+.btn{
+    width: 80%;
+    height: 50rpx;
+    line-height: 50rpx;
+    margin-top: 14rpx;
+    font-size: 0.52rem;
+    letter-spacing: 2px;
+    margin-right: 8px;
+}
