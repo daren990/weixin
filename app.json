@@ -7,8 +7,8 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "标题",
+    "navigationBarBackgroundColor": "pink",
+    "navigationBarTitleText": "房卡兔",
     "navigationBarTextStyle":"black"
   }
 }

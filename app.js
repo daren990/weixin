@@ -16,8 +16,14 @@ App({
         success: function () {
           wx.getUserInfo({
             success: function (res) {
-              that.globalData.userInfo = res.userInfo
+              that.globalData.userInfo = res.userInfo;
+              that.globalData.chaters.push(res.userInfo.nickName);
               typeof cb == "function" && cb(that.globalData.userInfo)
+              if(that.globalData.chaters.length>1){
+                 wx.navigateTo({
+                  url: '../demo1/one1'
+                 });
+              }
             }
           })
         }
@@ -25,6 +31,7 @@ App({
     }
   },
   globalData:{
-    userInfo:null
+    userInfo:null,
+    chaters:[]
   }
 })
