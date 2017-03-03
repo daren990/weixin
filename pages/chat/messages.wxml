@@ -1,4 +1,4 @@
-<scroll-view scroll-into-view="{{addTop}}" class="scrheight" scroll-y="true">
+<scroll-view style="height: 200px;" scroll-into-view="{{addTop}}" bindscroll="scroll" scroll-top="{{isnumber}}" class="scrheight" scroll-y="true">
         <view id="{{ i.mesId }}" wx:for="{{message}}" wx:for-item="i">
                 <view  wx:if="{{ i.text1 }}" class="clearfix">
                     <image class="left-img left-view"  src="{{userInfo.avatarUrl}}"></image>

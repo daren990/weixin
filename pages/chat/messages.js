@@ -7,6 +7,7 @@ Page({
     btnshow:false,
     valueInput:"",
     addTop:["1"],
+    isnumber:100,
     message:[]
   },
   onLoad:function(options){
@@ -46,6 +47,10 @@ Page({
       })
     }
   },
+  scroll: function(e) {
+    console.log(e)
+    console.log(e.detail.scrollTop)
+  },
   submit:function(e){
     //点击发送信息
     let datar = this.data;
@@ -60,8 +65,10 @@ Page({
     this.setData({
         message:addmessage,
         valueInput:"",
-        addTop:nextTop
+        addTop:nextTop,
+        isnumber:datar.isnumber +10
     });
+    console.log(e)
  },
  onReady:function(){
     // 页面渲染完成
